@@ -1,21 +1,23 @@
 import right_image from './pics.jpg';
+import icon from './icon.png';
 import './App.css';
 
 
 function Navigation() {
   return (
     <nav>
-      <div>
+      <div id="icons">
+        <img src={icon} />
         <h1>TECHBARGE</h1>
       </div>
       <div id="links">
           <ul>
-            <li><a href="#">What We create</a></li>
+            <li><a href="#" class="active">What We create</a></li>
             <li><a href="#">Opportunities</a></li>
             <li><a href="#">Indusry Examples</a></li>
-            <li><a href="#">Contact</a></li>
-            
+            <li><a href="#">Contacts</a></li>
           </ul>
+          <button>Get Started</button>
       </div>
     </nav>
   )
